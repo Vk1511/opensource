@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
-
+// import AllBlog from './component/AllBlog'
+// import {Switch, Route} from 'react-router-dom'
+import Reply from './component/Reply'
+import Cart from './component/Cart'
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Cart />
+    {/* <Reply/> */}
+      {/* <Switch>
+      <Route exact path="/">
+        <AllBlog cat={"Technology"}/>
+      </Route>
+      <Route exact path="/all-blogs/health">
+        <AllBlog cat={"Health"}/>
+      </Route>
+      <Route exact path="/all-blogs/travel">
+        <AllBlog cat={"Travel"}/>
+      </Route>
+      <Route exact path="/all-blogs/technology">
+        <AllBlog cat={"Technology"}/>
+      </Route>
+      <Route exact path="/all-blogs/religion">
+        <AllBlog cat={"Religion"}/>
+      </Route>
+    </Switch> */}
+    </>
   );
 }
 

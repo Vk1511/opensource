@@ -1,0 +1,80 @@
+.cat-menuvk{
+    grid-column: 1/-1;
+    margin: 0;    
+}
+
+.cat-menuvk ul{
+    text-align: center;
+    position: sticky;
+}
+
+.cat-menuvk ul li{
+    display: inline-flex;
+    font-size: 1.3rem;    
+}
+
+.linkvk{
+    padding: .5rem;
+    margin-top: .5rem;
+    color: black;
+    border-radius: 10px;
+}
+
+.linkvk:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.active,.active:hover{
+    background-color: dodgerblue;
+    color: white;
+    transition: 1s background-color;
+}
+
+.cat-menuvk .btn{
+    display: none;
+    width: 91%;
+    margin: 1rem;
+    padding: 0;
+    outline: none !important;
+    border: none !important;
+}
+button.btn{
+    outline: none !important;
+    border: none !important;
+}
+button.btn:active{
+    outline: none !important;
+    border: none !important;
+}
+button.btn:focus{
+    outline: none !important;
+    border: none !important;
+}
+.cat-menuvk .btn .tgl-font{
+    font-size: 1.5rem;
+    padding: 0 0 0 10px;
+    font-weight: bold;
+    color: dodgerblue;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 540px){
+    .cat-menuvk .btn{
+        display: flex;
+        border: none;
+    }
+    .cat-menuvk ul li{
+        display: flex;
+        flex-direction: column;    
+    }
+    .hide{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+}

@@ -1,0 +1,161 @@
+.reply_model{
+    height: 500px;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: gray;
+    position: fixed;
+}
+
+.head{
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 8%;
+    background-color:lightgreen;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+}
+.head_text{
+    flex: 90%;
+    display: flex;
+    align-self: center;
+    margin: 1%;
+}
+.close_btn{
+    background-color: lightgreen;
+    border: none;
+    margin-right: 1%;
+}
+
+/* cmnt str */
+.heyman{
+    height: 80%;
+    overflow-y: auto;
+    position: fixed;
+    width: 100%;
+}
+.cmnt{
+    display: flex;
+    margin: 2%;
+}
+
+.cmnt_pro{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+.cmnt_data{
+    background-color: lightcoral;
+    margin-left: 2%;
+    padding: 1%;
+    border-radius: 8px;
+    width: 100%;
+}
+.content{
+    display: flex;
+}
+.name{
+    margin-top: 1%;
+    flex: 90%;
+    font-weight: 500;
+}
+.dot{
+    flex: 10%;
+    background: lightcoral;
+    border: none;
+}
+.actual_cmnt{
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+/* rep */
+.send_cmnt{
+    display: inline-flex;
+    height: 12%;
+    position: fixed;
+    bottom: 0 !important;
+    width: 100%;
+    background-color:white;
+}
+.send_pro{
+    flex: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.send_pro_pic{
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-left: 2%;
+}
+.number{
+    flex: 85%;
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.number textarea{
+    border: none;
+    padding-left: 2%;
+}
+.number textarea::placeholder{
+   padding-left: 1%;
+}
+.textbox{
+    width: 100%;
+    line-height: 350%;
+}
+.textbox:focus{
+    outline: none;
+    line-height: 130%;
+}
+.send_btn{
+    flex: 15%;
+}
+.send_btn:focus,:active{
+    outline: none;
+    border: none;
+}
+.send_btn button{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background:none;
+}
+
+/* rec */
+
+.cmnt_re{
+    display: flex;
+    margin: 2% 0 2% 0;
+}
+
+.img{
+    flex: 20%;
+    
+}
+.vk{
+    width: 100%;
+    display: flex;
+    margin-right: 2%;
+}
+
+@media (max-width:540px){
+    .reply_model{
+        margin: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .heyman{
+        height: 81%;
+    }
+    .send_cmnt{
+        height: 9%;
+    }
+}

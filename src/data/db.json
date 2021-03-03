@@ -1,0 +1,21 @@
+{
+    "emp":[
+        {
+            "emp_age":25,
+            "emp_salary":25000
+        },
+        {
+            "emp_age":30,
+            "emp_salary":30000
+        },
+        {
+            "emp_age":35,
+            "emp_salary":35000
+        },
+        {
+            "emp_age":40,
+            "emp_salary":40000
+        }
+    ]
+    
+}
